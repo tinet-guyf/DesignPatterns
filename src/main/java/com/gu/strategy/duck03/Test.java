@@ -10,5 +10,10 @@ public class Test {
         duck.display();
         duck.performFly();
         duck.performQuack();
+
+        String s = null;
+        String[] split = s.split(",");
+        System.out.println(split.length);
+
     }
 }

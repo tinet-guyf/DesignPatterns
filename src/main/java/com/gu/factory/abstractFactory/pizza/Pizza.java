@@ -1,6 +1,5 @@
 package com.gu.factory.abstractFactory.pizza;
 
-import com.gu.factory.abstractFactory.PizzaIngredientFactory;
 import com.gu.factory.abstractFactory.ingredient.*;
 
 /**
@@ -17,7 +16,7 @@ public abstract class Pizza {
 
     Veggie veggies[] = {};
 
-    Cheese chess = null;
+    Cheese cheese = null;
 
     Pepperoni pepperoni = null;
 
@@ -26,26 +25,26 @@ public abstract class Pizza {
     /**
      * 准备食材,从抽象工厂中获取各种食材
      */
-    abstract void prepare(PizzaIngredientFactory ingredientFactory);
+    abstract public void prepare();
 
     /**
      * 烘烤
      */
-    void bake(){
+    public void bake(){
         System.out.println("Bake for 20 minutes.....");
     }
 
     /**
      * 切片
      */
-    void cut(){
+    public void cut(){
         System.out.println("Cutting into slices....");
     }
 
     /**
      * 包装
      */
-    void box(){
+    public void box(){
         System.out.println("Box pizza ....");
     }
 
